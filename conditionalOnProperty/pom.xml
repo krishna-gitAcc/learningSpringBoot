@@ -51,4 +51,25 @@
 		</plugins>
 	</build>
 
+    <profiles>
+        <profile>
+            <id>local</id>
+            <properties>
+                <spring-boot.run.profiles>dev</spring-boot.run.profiles>
+            </properties>
+        </profile>
+        <profile>
+            <id>stage</id>
+            <properties>
+                <spring-boot.run.profiles>uat</spring-boot.run.profiles>
+            </properties>
+        </profile>
+        <profile>
+            <id>production</id>
+            <properties>
+                <spring-boot.run.profiles>prod</spring-boot.run.profiles>
+            </properties>
+        </profile>
+    </profiles>
+
 </project>
